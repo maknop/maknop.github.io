@@ -1,0 +1,54 @@
+baseURL = "http://localhost:1313/"
+title = "My Personal Website"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+
+# Enable emoji support
+enableEmoji = true
+
+# Theme
+theme = "hugo-blog-awesome"
+
+# Site parameters
+[params]
+  sitename = "My Personal Website"
+  defaultColor = "dark"
+  description = "Welcome to my personal website and blog"
+  mainSections = ["posts"]
+  toc = false
+  goToTop = true
+
+[params.author]
+  avatar = "avatar.jpg"
+  name = "Your Name"
+  bio = "Welcome to my corner of the internet"
+
+# Menu configuration
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+# Markdown rendering
+[markup]
+  [markup.highlight]
+    noClasses = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
