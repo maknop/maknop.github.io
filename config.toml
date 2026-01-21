@@ -1,4 +1,5 @@
 baseURL = "http://localhost:1313/"
+
 title = "My Personal Website"
 languageCode = "en-us"
 defaultContentLanguage = "en"
@@ -19,9 +20,10 @@ theme = "hugo-blog-awesome"
   goToTop = true
 
 [params.author]
-  avatar = "avatar.jpg"
-  name = "Your Name"
-  bio = "Welcome to my corner of the internet"
+  avatar = "profile_pic_1.jpg"
+  name = "Matt Knop"
+  intro = "Matt Knop"
+  description = "Welcome to my corner of the internet"
 
 # Menu configuration
 [menu]
